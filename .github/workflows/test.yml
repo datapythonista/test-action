@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: pandas-dev/github-doc-previewer@master
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          server: "http://135.125.134.118:8001"
-          job: "Doc Build and Upload"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          previewer-server: "http://135.125.134.118:8001"
+          artifact-job: "Doc Build and Upload"
