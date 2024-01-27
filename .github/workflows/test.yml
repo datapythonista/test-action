@@ -1,0 +1,9 @@
+on:
+  issue_comment:
+    types: created
+
+jobs:
+  previewer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: pandas-dev/doc-previewer@master
