@@ -5,6 +5,8 @@ on:
 jobs:
   previewer:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
       - uses: pandas-dev/github-doc-previewer@master
         with:
