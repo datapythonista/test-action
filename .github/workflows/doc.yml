@@ -1,0 +1,13 @@
+on: [ push, pull_request ]
+
+jobs:
+  doc:
+    name: Doc Build and Upload
+    runs-on: ubuntu-latest
+    steps:
+      - run: mkdir docs_dir
+      - run: echo "Preview is working!" > docs_dir/index.html
+      - uses: actions/upload-artifact@v4
+        with:
+          name: docs_artifact
+          path: docs_dir
