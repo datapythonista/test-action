@@ -6,4 +6,4 @@ jobs:
   previewer:
     runs-on: ubuntu-latest
     steps:
-      - uses: pandas-dev/doc-previewer@master
+      - uses: pandas-dev/github-doc-previewer@master
