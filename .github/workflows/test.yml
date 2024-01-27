@@ -11,6 +11,5 @@ jobs:
     steps:
       - uses: pandas-dev/github-doc-previewer@master
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           previewer-server: "http://135.125.134.118:8001"
           artifact-job: "Doc Build and Upload"
