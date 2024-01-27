@@ -6,7 +6,9 @@ jobs:
   previewer:
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       issues: write
+      pull-requests: write
     if: github.event.issue.pull_request && github.event.comment.body == '/preview'
     steps:
       - uses: pandas-dev/github-doc-previewer@master
