@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: pandas-dev/github-doc-previewer@master
         with:
-          previewer-server: "http://135.125.134.118:8001"
+          previewer-server: "https://pandas.pydata.org"
           artifact-job: "Doc Build and Upload"
